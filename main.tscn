@@ -28,6 +28,6 @@ texture = ExtResource("1_6pk5y")
 shape = SubResource("RectangleShape2D_twiin")
 
 [node name="Lösch es wenn du es siehst" type="Sprite2D" parent="."]
-position = Vector2(563, 134)
+position = Vector2(909, 247)
 scale = Vector2(1.40222, 0.691111)
 texture = ExtResource("3_omrsn")
