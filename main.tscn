@@ -27,6 +27,10 @@ texture = ExtResource("1_6pk5y")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
 shape = SubResource("RectangleShape2D_twiin")
 
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+
 [node name="Lösch es wenn du es siehst" type="Sprite2D" parent="."]
 position = Vector2(909, 247)
 scale = Vector2(1.40222, 0.691111)
