@@ -1,8 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://bwhd5ee2s2iye"]
+[gd_scene load_steps=4 format=3 uid="uid://bwhd5ee2s2iye"]
 
 [ext_resource type="Texture2D" uid="uid://bpihxim80rest" path="res://icon.svg" id="1_6pk5y"]
 [ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_m6su0"]
-[ext_resource type="Texture2D" uid="uid://ckr7sm3c447a5" path="res://Unbenannt.jpeg" id="3_omrsn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_twiin"]
 size = Vector2(128, 128)
@@ -30,8 +29,3 @@ shape = SubResource("RectangleShape2D_twiin")
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
 position_smoothing_enabled = true
 position_smoothing_speed = 8.0
-
-[node name="Lösch es wenn du es siehst" type="Sprite2D" parent="."]
-position = Vector2(909, 247)
-scale = Vector2(1.40222, 0.691111)
-texture = ExtResource("3_omrsn")
