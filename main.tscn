@@ -1,0 +1,33 @@
+[gd_scene load_steps=5 format=3 uid="uid://bwhd5ee2s2iye"]
+
+[ext_resource type="Texture2D" uid="uid://bpihxim80rest" path="res://icon.svg" id="1_6pk5y"]
+[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_m6su0"]
+[ext_resource type="Texture2D" uid="uid://ckr7sm3c447a5" path="res://Unbenannt.jpeg" id="3_omrsn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_twiin"]
+size = Vector2(128, 128)
+
+[node name="Main" type="Node"]
+
+[node name="background" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.443137, 0.847059, 0.803922, 1)
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(576, 324)
+script = ExtResource("1_m6su0")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("1_6pk5y")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+shape = SubResource("RectangleShape2D_twiin")
+
+[node name="Lösch es wenn du es siehst" type="Sprite2D" parent="."]
+position = Vector2(563, 134)
+scale = Vector2(1.40222, 0.691111)
+texture = ExtResource("3_omrsn")
