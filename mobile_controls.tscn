@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://crgood3omyb4n"]
+
+[node name="MobileControls" type="CanvasLayer"]
+
+[node name="Left" type="TouchScreenButton" parent="."]
+
+[node name="Right" type="TouchScreenButton" parent="."]
+
+[node name="Up" type="TouchScreenButton" parent="."]
+
+[node name="Down" type="TouchScreenButton" parent="."]

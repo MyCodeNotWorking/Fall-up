@@ -1,10 +1,6 @@
-[gd_scene load_steps=4 format=3 uid="uid://bwhd5ee2s2iye"]
+[gd_scene load_steps=2 format=3 uid="uid://bwhd5ee2s2iye"]
 
-[ext_resource type="Texture2D" uid="uid://bpihxim80rest" path="res://icon.svg" id="1_6pk5y"]
-[ext_resource type="Script" path="res://CharacterBody2D.gd" id="1_m6su0"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_twiin"]
-size = Vector2(128, 128)
+[ext_resource type="PackedScene" uid="uid://7h2y1h40nnwx" path="res://player.tscn" id="1_3f7v6"]
 
 [node name="Main" type="Node"]
 
@@ -16,16 +12,5 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.443137, 0.847059, 0.803922, 1)
 
-[node name="player" type="CharacterBody2D" parent="."]
-position = Vector2(576, 324)
-script = ExtResource("1_m6su0")
-
-[node name="Sprite2D" type="Sprite2D" parent="player"]
-texture = ExtResource("1_6pk5y")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
-shape = SubResource("RectangleShape2D_twiin")
-
-[node name="Camera2D" type="Camera2D" parent="player"]
-position_smoothing_enabled = true
-position_smoothing_speed = 8.0
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_3f7v6")]
+position = Vector2(545, 273)
