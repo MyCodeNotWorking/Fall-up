@@ -13,4 +13,4 @@ grow_vertical = 2
 color = Color(0.443137, 0.847059, 0.803922, 1)
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_3f7v6")]
-position = Vector2(587, 382)
+position = Vector2(547, 337)
