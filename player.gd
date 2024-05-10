@@ -3,13 +3,13 @@ extends CharacterBody2D
 const speed : float = 600
 
 func _physics_process(delta):
-	if Input.is_action_pressed("ui_right"):
+	if Input.is_action_pressed("game_right"):
 		position.x += speed*delta
-	if Input.is_action_pressed("ui_left"):
+	if Input.is_action_pressed("game_left"):
 		position.x -= speed*delta
-	if Input.is_action_pressed("ui_up"):
+	if Input.is_action_pressed("game_up"):
 		position.y -= speed*delta
-	if Input.is_action_pressed("ui_down"):
+	if Input.is_action_pressed("game_down"):
 		position.y += speed*delta
 	
 	var w = $CollisionShape2D.shape.size.x / 2
@@ -18,3 +18,4 @@ func _physics_process(delta):
 	var vh = get_viewport_rect().size.y - h
 	position.x = clamp(position.x, w, vw)
 	position.y = clamp(position.y, h, vh)
+

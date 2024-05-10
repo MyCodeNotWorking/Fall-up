@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://7h2y1h40nnwx"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_wo6dm"]
+[ext_resource type="Texture2D" uid="uid://bpihxim80rest" path="res://icon.svg" id="2_imiet"]
+[ext_resource type="PackedScene" uid="uid://crgood3omyb4n" path="res://mobile_controls.tscn" id="3_lrhsd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_58fac"]
+size = Vector2(126, 126)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+position = Vector2(577, 322)
+script = ExtResource("1_wo6dm")
+
+[node name="Icon" type="Sprite2D" parent="."]
+position = Vector2(0, -5)
+texture = ExtResource("2_imiet")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_58fac")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-2, -1)
+position_smoothing_enabled = true
+position_smoothing_speed = 8.0
+
+[node name="MobileControls" parent="." instance=ExtResource("3_lrhsd")]
